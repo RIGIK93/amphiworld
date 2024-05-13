@@ -8,6 +8,8 @@
     import CAECILIAN from "$lib/images/caecilian.png?enhanced"
     import WOOD_FROG from "$lib/images/wood_frog.webp?enhanced"
     import FROGALITY_MAP from "$lib/images/Global-Amphibian-Species-Richness-Map.webp?enhanced"
+    import InfoButton from "$lib/components/InfoButton.svelte";
+    import AXOLOTL from "$lib/images/axolotl.jpg?enhanced"
 </script>
 
 <svelte:head>
@@ -106,7 +108,7 @@
     <article class="prose my-10">
         <h1>Fun (and Other) Facts</h1>
         <ul>
-            <li>Undergo Metamorphosis</li> <!-- <button class="btn btn-square btn-xs"><img src="https://img.icons8.com/info" class="not-prose h-4 w-4" alt="learn more"/></button> -->
+            <li>Undergo Metamorphosis <InfoButton><h3 class="font-bold text-lg">Some!</h3><p class="py-4">Thing!</p></InfoButton></li>
             <li>Must Live Near Water</li>
             <li>Skin Surface Respiration</li>
             <li>Have Extremely Primitive Lungs</li>
@@ -202,7 +204,7 @@
                 <p>
                 Honestly, Wood Frogs have earned the spotlight. 
                 They are <u>the only</u> frogs that live North of the arctic circle.
-                They're so tough they should be mentioned in Joe Rogan's podcast along with polar bears.
+                They're so tough they should be mentioned on the Joe Rogan's podcast along with polar bears.
                 Here, just <a class="link" href="https://alaskausfws.medium.com/wood-frogs-of-the-far-north-cd8e987e3cce">read more</a> about them.
                 </p>
             </div>
@@ -259,10 +261,10 @@
 
         <Galery4 images={salamanders}/>
 
-        <h2>Don't Call it a Lizard!</h2>
+        <h2>Don't Call It a Lizard!</h2>
 
         <p>
-            Salamanders are, in fact, not lizards! They have similarities, but <b>THEY ARE NOT THE SAME!</b> 
+            Salamanders are, in fact, not lizards! They have similarities such as slender bodies, short legs and long tails, but <b>THEY ARE NOT THE SAME!</b> 
             This is why, again, just like with frogs and toads, I compiled a table to contrast them in order for an uneducated public (including myself, until recently) to engrave the difference in their heads.
         </p>
 
@@ -294,9 +296,40 @@
             </div>
         </div>
 
+
+        <!-- https://www.reptilegardens.com/animals/amphibians-and-bugs/salamanders/ -->
         <h2>Habitat</h2>
+        <p>
+            What you should have picked up from our discussion so far is that amphibians looooove water.
+            Salamanders, being Amphibians, duh, are not an exception.
+            They live in moist or arid habitats in the northern hemisphere (mostly Americas), most salamanders are small, although there are two species that reach up to 5ft (1.5m) in length!
+            Those lizard (but not lizard) like creatures live near water or shelter in the moist ground: brooks, creeks, ponds, and other moist locations such as under rocks.
+            They lay (shell-less) eggs in water, so they <u>need clean water</u>! Hence, don't pollute water!!!
+        </p>
+
+        <div class="card lg:card-side bg-base-100 shadow-xl not-prose">
+            <figure class=""><enhanced:img class="h-full object-cover overflow-hidden" src={AXOLOTL} alt="Wood Frog Image"/></figure>
+            <div class="card-body">
+                <h2 class="card-title">Axolotl Hall of Fame</h2>
+                <p class="">
+                    People love axolotls. 
+                    Yes, this is a statement and a true fact based on personal experience, mostly.
+                    They're famous as, unlike regular salamanders, they can reach adulthood without undergoing metamorphosis, hereby remaining aquatic and gilled.
+                    But it is not for the love that they have the spotlight, it is because we owe them a <u>serious apology</u>.
+                    And I literally cannot underscore the extent of this apology enough.
+                    Their original habitat is in the lakes near this something we now call Mexico City.
+                    When the settlers came to colonize, they drained the Axolotls' lakes, destroying much of their original habitat.
+                    But, as much as I desire to finish this, the awfulness does not end on that note.
+                    In 2020 axolotls had to bear near extinction because we, selfish humans, decided to pollute the homes of axolotls for the sake of our concrete homes.
+                    So... Give your Respect to an Axolotl when you see one!
+                </p>
+            </div>
+        </div>
+
 
         <h2>Food</h2>
+
+        <h2>Regeneration</h2>
 
         <h2>Origins</h2>
 
@@ -310,18 +343,25 @@
 
         <h2>What... Even is this thing?!</h2>
 
-        This was the first question I asked when i saw <i>THIS</i>. 
-        It looks as if a worm and an electric eel had a baby! 
-        How can this be related to those cutesy frogs we have all seen above?!
+        <p>
+            This was the first question I asked when i saw <i>THIS</i>. 
+            It looks as if a worm and an electric eel had a baby! 
+            How can this be related to those cutesy frogs we have all seen above?!
+        </p>
 
     </article>
 
-    <!-- Safe Amphibians! -->
+    <!-- Save Amphibians! -->
+    <article class="prose my-10">
+        <h1>Save Amphibians!</h1>
+    </article>
 </main>
 
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
     <aside>
-        MIT License. Copyright © 2024 Maxim Peniaz.
+        <p>
+            MIT License. Copyright © 2024 <a href="https://darklynx.org" class="link">Maxim Peniaz</a>. <a href="https://github.com/RIGIK93/amphiworld" class="link">Repository</a>.
+        </p>
     </aside>
 </footer>
 
