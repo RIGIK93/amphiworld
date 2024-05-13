@@ -18,6 +18,7 @@
 
     <meta name="og:title" content="Amphibian World"/>
     <meta name="og:description" content="A Place to Appreciate Our Amphibian Friends"/>
+    <meta property="og:type" content="website" />
     <meta name="og:image" content="https://amphibia.darklynx.org/og_cover.jpg"/>
 </svelte:head>
 
