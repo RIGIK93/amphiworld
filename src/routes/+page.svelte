@@ -16,6 +16,7 @@
 
     <meta name="og:title" content="Amphibian World"/>
     <meta name="og:description" content="A Place to Appreciate Our Amphibian Friends"/>
+    <meta name="og:image" content={frogs[5]}/>
 </svelte:head>
 
 <header class="md:w-1/2 mx-5 md:mx-auto my-10">
@@ -105,7 +106,7 @@
     <article class="prose my-10">
         <h1>Fun (and Other) Facts</h1>
         <ul>
-            <li>Undergo Metamorphosis <button class="btn btn-square btn-xs"><img src="https://img.icons8.com/info" class="not-prose h-4 w-4" alt="learn more"/></button></li>
+            <li>Undergo Metamorphosis</li> <!-- <button class="btn btn-square btn-xs"><img src="https://img.icons8.com/info" class="not-prose h-4 w-4" alt="learn more"/></button> -->
             <li>Must Live Near Water</li>
             <li>Skin Surface Respiration</li>
             <li>Have Extremely Primitive Lungs</li>
@@ -259,6 +260,45 @@
         <Galery4 images={salamanders}/>
 
         <h2>Don't Call it a Lizard!</h2>
+
+        <p>
+            Salamanders are, in fact, not lizards! They have similarities, but <b>THEY ARE NOT THE SAME!</b> 
+            This is why, again, just like with frogs and toads, I compiled a table to contrast them in order for an uneducated public (including myself, until recently) to engrave the difference in their heads.
+        </p>
+
+        <div class="flex w-full max-md:flex-col">
+            <div class="grid w-full md:w-1/2 flex-grow card rounded-box place-items-center">
+                <b>Salamanders</b>
+                <ul>
+                    <li>Amphibians.</li>
+                    <li>Moist, porous skin that is permeable to water.</li>
+                    <li>Salamanders dwell in aquatic habitats or in moist terrestrial habitats, like woodlands.</li>
+                    <li>Some breathe through lungs, skin and mouth lining, while some don't have lungs and some even have gills.</li><!-- Some species breathe through lungs in addition to their skin and mouth lining, while other species lack lungs and rely on their skin and mouth lining for respiration. Fully aquatic species of salamander and aquatic larvae breathe through their skin and many species have external gills. -->
+                    <li>Lay non-shelled eggs (with one exception). Some lay eggs in water and others on land (then larval stage is skipped).</li> <!-- the one exception is the European fire salamander, which gives birth to fully developed young -->
+                    <li>All salamanders, are nocturnal.</li>
+                    <li>Salamanders are strictly carnivorous, feeding on a typical diet of earthworms, insects and other small invertebrates.</li>
+                </ul>
+            </div>
+            <div class="divider divider-vertical md:divider-horizontal">VS</div>
+            <div class="grid w-full md:w-1/2 flex-grow card rounded-box place-items-center">
+                <b>Lizards</b>
+                <ul>
+                   <li>Reptiles.</li>
+                   <li>Dry skin with scales.</li>
+                   <li>Lizards live in a wide variety of terrestrial habitats across the globe and are found on every continent except Antarctica.</li>
+                   <li>Lizards breathe with lungs</li>
+                   <li>Lizards typically lay shelled eggs on land, although some species are viviparous, meaning they give birth to fully developed young.</li>
+                   <li>Most species of lizard are diurnal (active during the day) — although there are some nocturnal lizards, like geckos.</li>
+                   <li>Some are carnivores and eat only other animals, some are herbivores and eat only plants, and some are omnivores and eat both.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Habitat</h2>
+
+        <h2>Food</h2>
+
+        <h2>Origins</h2>
 
     </article>
 
