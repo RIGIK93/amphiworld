@@ -108,14 +108,14 @@
     <article class="prose my-10">
         <h1>Fun (and Other) Facts</h1>
         <ul>
-            <li>Undergo Metamorphosis <InfoButton><h3 class="font-bold text-lg">Some!</h3><p class="py-4">Thing!</p></InfoButton></li>
+            <li>Undergo Metamorphosis <!-- <InfoButton><h3 class="font-bold text-lg">Some!</h3><p class="py-4">Thing!</p></InfoButton> --> </li>
             <li>Must Live Near Water</li>
             <li>Skin Surface Respiration</li>
             <li>Have Extremely Primitive Lungs</li>
             <li>Are Among World's Most Endangered Animals</li>
             <li>Double-channeled Hearing System</li>
             <li>Cold-Blooded</li>
-            <li>Used to be Way Bigger</li>
+            <li>Used to be Way Larger</li>
         </ul>
     </article>
 
@@ -314,7 +314,7 @@
                 <p class="">
                     People love axolotls. 
                     Yes, this is a statement and a true fact based on personal experience, mostly.
-                    They're famous as, unlike regular salamanders, they can reach adulthood without undergoing metamorphosis, hereby remaining aquatic and gilled.
+                    They're famous as, unlike regular salamanders, they can reach adulthood without undergoing metamorphosis, hereby remaining aquatic and gilled. Oh, they also can regenerate, much like all salamanders.
                     But it is not for the love that they have the spotlight, it is because we owe them a <u>serious apology</u>.
                     And I literally cannot underscore the extent of this apology enough.
                     Their original habitat is in the lakes near this something we now call Mexico City.
@@ -326,12 +326,37 @@
             </div>
         </div>
 
-
+        <!-- https://rochester.kidsoutandabout.com/content/what-do-salamanders-eat#:~:text=When%20they%20have%20grown%20into,including%20worms%2C%20spiders%20and%20slugs. -->
         <h2>Food</h2>
+
+        <p>
+            Much like frogs, you should say a big thanks to salamanders for eatings all these insects you hate, such as larvae of moscitos, and flies.
+            They also save us from worms, crickets, centipedes and spiders.
+            Additionally, some salamanders eat other small invertebrates.
+        </p>
 
         <h2>Regeneration</h2>
 
-        <h2>Origins</h2>
+        <p>
+            Salamanders are well-know for their regenerational powers!
+            I wish I could grow, let's say, a leg... 
+            Imagine how much you could save on hospital bills if you had this kind of power?
+            Forgot to bring a snack with you to a day-long hike? Lend yourself your helping hand!
+        </p>
+
+        <!-- <p>
+            But where does this regenerative power comes from?
+        </p> -->
+
+        <!-- <h2>Origins</h2> -->
+
+        
+
+        <!-- <h2>Poison</h2>
+
+        <p>
+            Those salamanders are cool and lend us their helping hand, some of them are really po... follow the rule: if it is pretty, it doesn't need to hide.
+        </p> -->
 
     </article>
 
@@ -347,14 +372,45 @@
             This was the first question I asked when i saw <i>THIS</i>. 
             It looks as if a worm and an electric eel had a baby! 
             How can this be related to those cutesy frogs we have all seen above?!
+            Well, turns out it can.
+            Imagine a blind and long salamander without legs and with rings along their bodies (those that worms usually have). 
+            Imagined? Yeah... You get caecilians.
+        </p>
+
+        <h2>Origins</h2>
+
+        <p>
+            The natural question you may ask is where did evolution mess up so much in order to create this.
+            Why would we even have <u>that</u>?
+            Well, it certainly has advantages. 
+            Just like worms they dig tunnels, which is why they neither need sight, nor hearing.
+            The earliest fossil attributed to a stem-caecilian (an amphibian closer to caecilians than to frogs or salamanders but not a member of the extant caecilian lineage) comes from the Jurassic period.
+            Back then those things still had limbs (though small) and well-developed eyes. 
+            So, you could say, from human perspective caecilians have devolved.
+        </p>
+
+        <h2>Habitat</h2>
+
+        <p>
+            Turns out, they live in a lot of places: ranging from Central Africa, Southeast Asia, and southern Mexico to Argentina, these creatures prefer loose soil and leaf litter in tropical forests or near rivers and streams.
+        </p>
+
+        <h2>Food</h2>
+
+        <p>
+            Unlike worms, this thing has a sharp tooth. Sharp indeed.
+            It has two rows on the upper jaw and one or two on the lower.
+            The teeth allow them to grab worms, termites, beetle pupae, mollusks, small snakes, frogs, lizards, and even other caecilians! 
+            All food is swallowed whole. 
+            Furthermore, caecilians have toxic glands in their skin that sometimes protect them from being eaten by other wildlife.
         </p>
 
     </article>
 
     <!-- Save Amphibians! -->
-    <article class="prose my-10">
+    <!-- <article class="prose my-10">
         <h1>Save Amphibians!</h1>
-    </article>
+    </article> -->
 </main>
 
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
