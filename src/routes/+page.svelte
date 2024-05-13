@@ -12,6 +12,10 @@
 
 <svelte:head>
     <title>Amphibian World</title>
+    <meta name="description" content="A Place to Appreciate Our Amphibian Friends"/>
+
+    <meta name="og:title" content="Amphibian World"/>
+    <meta name="og:description" content="A Place to Appreciate Our Amphibian Friends"/>
 </svelte:head>
 
 <header class="md:w-1/2 mx-5 md:mx-auto my-10">
@@ -97,6 +101,7 @@
     </article>
 
     <!-- Fun Facts -->
+    <!-- https://www.thoughtco.com/facts-about-amphibians-4069409 -->
     <article class="prose my-10">
         <h1>Fun (and Other) Facts</h1>
         <ul>
@@ -115,6 +120,7 @@
     <article class="prose my-10">
         <h1>Frogs&Toads</h1>
 
+        <!-- https://flowbite.com/docs/components/gallery/ -->
         <Galery9 images={frogs}/>
 
         <!-- origins -->
@@ -168,9 +174,17 @@
         
         <!-- Tell them apart (game) -->
 
+        <!-- https://artsandculture.google.com/story/the-first-leap-frogs-friends/9wVhMka7ZCEqIA?hl=en -->
         <h2>Origins</h2>
 
-
+        <p>
+            How dare you call yourself a frog fan without knowing how frogs appeared &mdash; I asked myself one day.
+            And you should ask this question too. Curiosity is the key to success, survival and life, you know.
+            Turns out there is an excellent presentation on Google's Arts&Culture Website by someone named Frogs&Friends called <a href="https://artsandculture.google.com/story/the-first-leap-frogs-friends/9wVhMka7ZCEqIA?hl=en" class="link">"The First Leap"</a>.
+            You a 100% have to open it up. It is nice and short. 
+            But, in short, 290M years ago a frogmander (half-frog, half-salamander) Gerobatrachus appeared. 
+            Then, 250M years ago the first frog Triadobatrachus massinoti has appeared!
+        </p>
 
         <h2>Habitat</h2>
 
@@ -224,7 +238,17 @@
 
         <h2>Food</h2>
 
+        <!-- https://www.woodlandtrust.org.uk/blog/2019/03/what-do-frogs-eat/#:~:text=Small%20frogs%20eat%20insects%20such,on%20plants%20and%20small%20insects. -->
+        <p>
+            Frogs eat insects such as flies and moths, as well as snails, slugs and worms. They use long tongues and sticky saliva to catch prey that passes them by (Rachel Hoskins). 
+            Tadpoles eat algae in the ponds they grow in (Rachel Hoskins).
+            As they grow, they feed on plants and small insects (Rachel Hoskins). 
+            If there isn't enough food available they might even eat their fellow tadpoles (Rachel Hoskins).
+        </p>
+
         <!-- Metamorphosis -->
+
+        <!-- Frog Ponds -->
     </article>
 
     <!-- Salamanders -->
@@ -251,6 +275,8 @@
         How can this be related to those cutesy frogs we have all seen above?!
 
     </article>
+
+    <!-- Safe Amphibians! -->
 </main>
 
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
@@ -260,7 +286,7 @@
 </footer>
 
 <style>
-    .appear {
+    /* .appear {
         transition: all 0.8s;
         opacity: 0;
         transform: translateY(40px);
@@ -270,5 +296,5 @@
         opacity: 1;
         transform: none;
         transition-delay: 0.3s;
-    }
+    } */
 </style>
