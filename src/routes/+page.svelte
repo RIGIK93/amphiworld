@@ -16,10 +16,10 @@
     <title>Amphibian World</title>
     <meta name="description" content="A Place to Appreciate Our Amphibian Friends"/>
 
-    <meta name="og:title" content="Amphibian World"/>
-    <meta name="og:description" content="A Place to Appreciate Our Amphibian Friends"/>
+    <meta property="og:title" content="Amphibian World"/>
+    <meta property="og:description" content="A Place to Appreciate Our Amphibian Friends"/>
     <meta property="og:type" content="website" />
-    <meta name="og:image" content="https://amphibia.darklynx.org/og_cover.jpg"/>
+    <meta property="og:image" content="https://amphibia.darklynx.org/og_cover.jpg"/>
 </svelte:head>
 
 <header class="md:w-1/2 mx-5 md:mx-auto my-10">
