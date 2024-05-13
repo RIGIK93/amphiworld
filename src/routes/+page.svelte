@@ -18,7 +18,7 @@
 
     <meta name="og:title" content="Amphibian World"/>
     <meta name="og:description" content="A Place to Appreciate Our Amphibian Friends"/>
-    <meta name="og:image" content="/og_cover.jpg"/>
+    <meta name="og:image" content="https://amphibia.darklynx.org/og_cover.jpg"/>
 </svelte:head>
 
 <header class="md:w-1/2 mx-5 md:mx-auto my-10">
