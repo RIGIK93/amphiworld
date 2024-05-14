@@ -10,6 +10,11 @@
     import FROGALITY_MAP from "$lib/images/Global-Amphibian-Species-Richness-Map.webp?enhanced"
     import InfoButton from "$lib/components/InfoButton.svelte";
     import AXOLOTL from "$lib/images/axolotl.jpg?enhanced"
+    import ImageQuiz2 from "$lib/components/ImageQuiz2.svelte";
+
+    import FROG_OR_TOAD from "$lib/images/frog_or_toad"
+    import SALAMANDER_OR_LIZARD from "$lib/images/salamander_or_lizard"
+    import { shuffle } from "$lib";
 </script>
 
 <svelte:head>
@@ -175,6 +180,16 @@
             </div>
         </div>
 
+        <p>Now that you know the differences, let's test you in an exciting game I called: <b>Frog or Toad?</b></p>
+
+        <ImageQuiz2 
+            title="Frog or Toad?"
+            options={["Frog", "Toad"]}
+            questions={
+                shuffle(FROG_OR_TOAD)
+            }
+        />
+
         
         <!-- Tell them apart (game) -->
 
@@ -296,6 +311,18 @@
                 </ul>
             </div>
         </div>
+
+        <p>
+            Now, prove to me you're worthy of being a salamander expert in a game "<b>Salamander or Lizard?</b>"
+        </p>
+
+        <ImageQuiz2 
+            title="Salamander or Lizard?"
+            options={["Salamander", "Lizard"]}
+            questions={
+                shuffle(SALAMANDER_OR_LIZARD)
+            }
+        />
 
 
         <!-- https://www.reptilegardens.com/animals/amphibians-and-bugs/salamanders/ -->
