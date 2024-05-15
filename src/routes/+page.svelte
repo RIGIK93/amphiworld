@@ -1,9 +1,9 @@
 <script lang="ts">
     import frogs from "$lib/images/frogs/index";
-    import Galery9 from "$lib/components/Galery9.svelte";
+    import Gallery9 from "$lib/components/Gallery9.svelte";
 
     import salamanders from "$lib/images/salamanders";
-    import Galery4 from "$lib/components/Galery4.svelte";
+    import Gallery4 from "$lib/components/Gallery4.svelte";
 
     import CAECILIAN from "$lib/images/caecilian.png?enhanced"
     import WOOD_FROG from "$lib/images/wood_frog.webp?enhanced"
@@ -15,6 +15,28 @@
     import FROG_OR_TOAD from "$lib/images/frog_or_toad"
     import SALAMANDER_OR_LIZARD from "$lib/images/salamander_or_lizard"
     import { shuffle } from "$lib";
+    import { onMount } from "svelte";
+
+    // Scroll Animation: Unnecessary
+    // let observer: any;
+
+    // onMount(() => {
+    //     const hidden_elements = document.querySelector('main')!.querySelectorAll('*');
+
+    //     observer = new IntersectionObserver((entries) => {
+    //         entries.forEach((entry) => {
+    //             console.log("entry")
+    //             if (entry.isIntersecting) {
+    //                 entry.target.classList.remove('scroll-hidden')
+    //                 entry.target.classList.add('scroll-show')
+    //                 // console.log(entry.target.classList)
+    //             }
+    //         })
+    //     })
+
+    //     hidden_elements.forEach(e => {e.classList.add('scroll-hidden'); observer.observe(e);})
+    // })
+   
 </script>
 
 <svelte:head>
@@ -26,6 +48,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://amphibia.darklynx.org/og_cover.jpg"/>
 </svelte:head>
+
+<!-- Seems like html automatically purges unused classes, so they have to be added in statically to be used dynamically through js -->
+<!-- <div class="scroll-show scroll-hidden absolute">
+
+</div> -->
 
 <header class="md:w-1/2 mx-5 md:mx-auto my-10">
     <h1 class="text-4xl sm:text-6xl md:text-7xl text-primary text-start md:text-end font-extrabold">Welcome to the Exciting World of Amphibians!</h1>
@@ -130,7 +157,7 @@
         <h1>Frogs&Toads</h1>
 
         <!-- https://flowbite.com/docs/components/gallery/ -->
-        <Galery9 images={frogs}/>
+        <Gallery9 images={frogs}/>
 
         <!-- origins -->
 
@@ -236,15 +263,15 @@
             This map clearly shows that there are a lot of frogs. 
             It also shows that you should move to South America because it has the largest number of our favorite frogs.
             But why are there so many frogs in this specific region? 
-            Perhaps, if we were to figure out the conditions that our frog friends liked, we could have set up an elaborate chain of lobying and propaganda
-            that would create global climate crisis and undermine its effects in order to make the world climate suitable for our frog friends to <b>OCUPPY ThE ENTIRE WORLD!</b>
+            Perhaps, if we were to figure out the conditions that our frog friends liked, we could have set up an elaborate chain of lobbying and propaganda
+            that would create global climate crisis and undermine its effects in order to make the world climate suitable for our frog friends to <b>OCCUPY ThE ENTIRE WORLD!</b>
         </p>
 
         <p>
-            In reality, frogs and toads are so diverse that some prefer cold and some prefer hot environemnts.
-            It is just so hapenned that there are a lot of frog species in the tropics, due to favorable rich-in-nutrients conditions. 
+            In reality, frogs and toads are so diverse that some prefer cold and some prefer hot environments.
+            It is just so happened that there are a lot of frog species in the tropics, due to favorable rich-in-nutrients conditions. 
             Remember! 
-            By changing the environemnt you'll be destroying the habitat of the frogs living at the extremes, so just don't change the environment.
+            By changing the environment you'll be destroying the habitat of the frogs living at the extremes, so just don't change the environment.
             Save the wood frog!
         </p>
 
@@ -275,7 +302,7 @@
     <article class="prose my-10">
         <h1>Salamanders</h1>
 
-        <Galery4 images={salamanders}/>
+        <Gallery4 images={salamanders}/>
 
         <h2>Don't Call It a Lizard!</h2>
 
@@ -358,7 +385,7 @@
         <h2>Food</h2>
 
         <p>
-            Much like frogs, you should say a big thanks to salamanders for eatings all these insects you hate, such as larvae of moscitos, and flies.
+            Much like frogs, you should say a big thanks to salamanders for eatings all these insects you hate, such as larvae of mosquitos, and flies.
             They also save us from worms, crickets, centipedes and spiders.
             Additionally, some salamanders eat other small invertebrates.
         </p>
@@ -450,15 +477,12 @@
 </footer>
 
 <style>
-    /* .appear {
-        transition: all 0.8s;
-        opacity: 0;
-        transform: translateY(40px);
+    /* .scroll-show {
+        opacity: 1.0;
+        transition: all 0.1s;
     }
 
-    .appear.inview {
-        opacity: 1;
-        transform: none;
-        transition-delay: 0.3s;
+    .scroll-hidden {
+        opacity: 0.0;
     } */
 </style>
